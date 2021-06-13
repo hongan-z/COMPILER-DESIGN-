@@ -1,10 +1,11 @@
 # COMPILER-DESIGN-Projct 
-PhaseI
+
+**PhaseI
 Suppose your lexical analyzer is in the executable named lexer. Then for the MINI-L program fibonacci.min, your lexical analyzer should be invoked as follows:
 
 cat fibonacci.min | lexer
 
---------------------------------------------------------------------------function fibonacci;
+function fibonacci;
 beginparams
 	k : integer;
 endparams
@@ -27,8 +28,7 @@ beginbody
 	fib_n := fibonacci(n);
 	write fib_n;
 endbody
-------------------------------------------------------------------------------------------------------
-output:
+
 FUNCTION
 IDENT fibonacci
 SEMICOLON
@@ -99,7 +99,7 @@ WRITE
 IDENT fib_n
 SEMICOLON
 END_BODY
----------------------------------------------------------------------------------------------------
+
 The following tasks will need to be performed to complete this phase of the project.
 Write the specification for a flex lexical analyzer for the MINI-L language. For this phase of the project, your lexical analyzer need only output the list of tokens identified from an inputted MINI-L program.
 Example: write the flex specification in a file named mini_l.lex.
@@ -108,7 +108,7 @@ Example: execute the command flex mini_l.lex. This will create a file called lex
 Compile your MINI-L lexical analyzer. This will require the -lfl flag for gcc.
 Example: compile your lexical analyzer into the executable lexer with the following command: gcc -o lexer lex.yy.c -lfl. The program lexer should now be able to convert an inputted MINI-L program into the corresponding list of tokens.
 
-************************************************************************************************************************************************************************************************************Phase II
+** Phase II
 Include:mini_l.lex /mini_l.y /mini_l_gramar.pdf /Makefile
 
 CFLAGS = -g -Wall -ansi -pedantic
