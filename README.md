@@ -111,3 +111,10 @@ Example: compile your lexical analyzer into the executable lexer with the follow
 ************************************************************************************************************************************************************************************************************Phase II
 Include:mini_l.lex /mini_l.y /mini_l_gramar.pdf /Makefile
 
+CFLAGS = -g -Wall -ansi -pedantic
+
+parser: mini_l.lex mini_l.y
+	bison -v -d --file-prefix=y mini_l.y
+	flex mini_l.lex
+	gcc -o parser y.tab.c lex.yy.c -lfl
+
