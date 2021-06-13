@@ -4,7 +4,7 @@ Suppose your lexical analyzer is in the executable named lexer. Then for the MIN
 
 cat fibonacci.min | lexer
 
-------------------------------------------------------------------------------------------------------function fibonacci;
+--------------------------------------------------------------------------function fibonacci;
 beginparams
 	k : integer;
 endparams
