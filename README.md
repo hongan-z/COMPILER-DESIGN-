@@ -1,4 +1,5 @@
-# COMPILER-DESIGN-
+# COMPILER-DESIGN-Projct 
+PhaseI
 Suppose your lexical analyzer is in the executable named lexer. Then for the MINI-L program fibonacci.min, your lexical analyzer should be invoked as follows:
 
 cat fibonacci.min | lexer
